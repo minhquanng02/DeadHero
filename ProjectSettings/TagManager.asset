@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - OneWayPlatform
+  - Boss
+  - Teleporter
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Wall
+  - Details
+  - Player
+  - Enemies
+  - Minimap
+  - Background
+  - Attack
+  - Teleport
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 277113
+    locked: 0
+  - name: Ground
+    uniqueID: 3315193995
+    locked: 0
+  - name: Enemies
+    uniqueID: 4228065621
+    locked: 0
+  - name: Player
+    uniqueID: 3210315847
+    locked: 0
+  - name: Effects
+    uniqueID: 4193080305
+    locked: 0
+  - name: Item
+    uniqueID: 3460705129
+    locked: 0
+  - name: UI
+    uniqueID: 361944467
+    locked: 0
