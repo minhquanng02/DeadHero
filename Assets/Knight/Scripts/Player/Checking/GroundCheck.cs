@@ -12,7 +12,7 @@ public class GroundCheck : MonoBehaviour
 
     private void IsGrounded()
     {
-        if (Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer))
+        if (Physics2D.OverlapCircle(groundCheck.position, 0.5f, groundLayer))
         { isGround = true; }
         else isGround = false;
     }

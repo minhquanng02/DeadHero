@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1000
   lowHealth: 0
-  attackDamage: 2000
+  attackDamage: 200
   EnragedAttackDamage: 60
   attackRate: 2
   attackRange: 1

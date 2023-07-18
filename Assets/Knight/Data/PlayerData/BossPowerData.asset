@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e05e9985bdfdd49931db5136c0e4e4, type: 3}
   m_Name: BossPowerData
   m_EditorClassIdentifier: 
-  maxHealth: 5000
-  lowHealth: 3000
+  maxHealth: 4000
+  lowHealth: 2000
   attackDamage: 60
   EnragedAttackDamage: 80
   attackRate: 2

@@ -42,5 +42,8 @@ public class GameManager : MonoBehaviour
             saveSystem.SaveData(player.GetComponent<PlayerDamagable>().currentHealth, player.transform.position);
     }
 
-    
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

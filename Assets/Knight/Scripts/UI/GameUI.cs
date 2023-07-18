@@ -12,10 +12,7 @@ public class GameUI : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); 
     }
 
-    public void Quit()
-    {
-        Application.Quit();
-    }
+    
 
     public void Play()
     {

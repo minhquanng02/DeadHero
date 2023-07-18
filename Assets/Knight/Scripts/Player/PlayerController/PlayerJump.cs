@@ -8,12 +8,16 @@ public class PlayerJump : MonoBehaviour
     private bool doubleJump; 
     private float jumpingPower = 25f;
 
-    
+    private float jumpTime = 0.2f;
+    private float jumpTimeCounter;
 
-    
+   
+
+
     public void Jump()
     {
         Debug.Log("jump");
+
         
         if (GroundCheck.IsGround)
         {
@@ -24,7 +28,7 @@ public class PlayerJump : MonoBehaviour
         }
 
         
-        if (GroundCheck.IsGround || doubleJump)
+        if (jumpTimeCounter > 0f && (GroundCheck.IsGround || doubleJump))
         {
             PlayerSystem.Animator.SetTrigger("Jump");
             AudioManager.Instance.PlaySFX("Jump");
@@ -36,7 +40,9 @@ public class PlayerJump : MonoBehaviour
 
         if (PlayerSystem.Rgb.velocity.y > 0f)
         {
-            PlayerSystem.Rgb.velocity = new Vector2(PlayerSystem.Rgb.velocity.x, PlayerSystem.Rgb.velocity.y * 0.5f);       
+            PlayerSystem.Rgb.velocity = new Vector2(PlayerSystem.Rgb.velocity.x, PlayerSystem.Rgb.velocity.y * 0.5f);
+
+            jumpTimeCounter = 0f;
         }
     }
 
@@ -45,5 +51,15 @@ public class PlayerJump : MonoBehaviour
     private void Update()
     {
         PlayerSystem.Animator.SetBool("IsGround", GroundCheck.IsGround);
+
+        if (GroundCheck.IsGround)
+        {
+            jumpTimeCounter = jumpTime;
+        }
+        else
+        {
+            jumpTimeCounter -= Time.deltaTime;
+        }
+
     }
 }
